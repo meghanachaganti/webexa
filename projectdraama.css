@@ -1,0 +1,179 @@
+body{
+    margin:0;
+    padding: 0;
+    background-color: black;
+    color:white;
+}
+.container{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 100px  900px 800px 100px;
+    grid-template-areas: "nav nav nav"
+    "main main main"
+    "submain submain submain"
+    "footer footer footer";
+}
+.nav{
+    display: flex;
+    margin-top: 10px;
+    grid-area: nav;
+   justify-content: center;
+   z-index: 1;
+}
+#nav1{
+    position: relative;
+}
+.main{
+    background: url(./sub/images/ChatGPT\ Image\ Jun\ 21\,\ 2025\,\ 10_52_46\ AM.png);
+    background-size:cover;
+   margin-top: 60px;
+    grid-area: main;
+   display: flex;
+   flex-direction: column;
+   width:100%;
+   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.submain{
+    padding-top: 250px;
+    grid-area: submain;
+    text-align: center;
+}
+.footer{
+    grid-area: footer;
+}
+#nav1 ul{
+  display: flex;
+}
+#nav1 ul li{
+    padding-right:  40px;
+}
+.main h1{
+    text-align: center;
+    color:crimson;
+}
+button
+{
+   padding-top: 15px;
+   padding-bottom: 15px;
+    margin: auto;
+    text-align: left;
+    border-radius: 25px;
+    border:none;
+}
+#btn1:hover{
+    cursor: pointer;
+}
+button:hover{
+    cursor:text;
+}
+#searchbtn:hover{
+    cursor: pointer;
+}
+.link_underline {
+  line-height: 1.25;
+  place-self: center;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  position:relative;
+  &:after {
+    position: absolute;
+    content: "";
+    bottom: -3px;
+    left: 0;
+    width: 60%;
+    border-bottom: 2px solid;
+    transform: scaleX(0);
+    color: crimson;
+    transform-origin: 100% 100%;
+    transition: transform .6s;
+    transition-timing-function: cubic-bezier(.39,.575,.28,.995);
+  }
+  &:hover {
+    &:after {
+      transform: scaleX(1);
+      transform-origin: 0 0;
+    }
+  }
+}
+.link_underline2 {
+  line-height: 1.25;
+  place-self: center;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  position:relative;
+  &:after {
+    position: absolute;
+    content: "";
+    bottom: -3px;
+    left: 0;
+    width: 60%;
+    border-bottom: 2px solid;
+    transform: scaleX(0);
+    color: crimson;
+    transform-origin: 100% 100%;
+    transition: transform .6s;
+    transition-timing-function: cubic-bezier(.39,.575,.28,.995);
+  }
+  &:hover {
+    &:after {
+      transform: scaleX(1);
+      transform-origin: 0 0;
+    }
+  }
+}
+.link_underline3 {
+  line-height: 1.25;
+  place-self: center;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  position:relative;
+  &:after {
+    position: absolute;
+    content: "";
+    bottom: -3px;
+    left: 0;
+    width: 60%;
+    border-bottom: 2px solid;
+    transform: scaleX(0);
+    color: crimson;
+    transform-origin: 100% 100%;
+    transition: transform .6s;
+    transition-timing-function: cubic-bezier(.39,.575,.28,.995);
+  }
+  &:hover {
+    &:after {
+      transform: scaleX(1);
+      transform-origin: 0 0;
+    }
+  }
+}
+.link_underline4{
+  line-height: 1.25;
+  place-self: center;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  position:relative;
+  &:after {
+    position: absolute;
+    content: "";
+    bottom: -3px;
+    left: 0;
+    width: 60%;
+    border-bottom: 2px solid;
+    transform: scaleX(0);
+    color: crimson;
+    transform-origin: 100% 100%;
+    transition: transform .6s;
+    transition-timing-function: cubic-bezier(.39,.575,.28,.995);
+  }
+  &:hover {
+    &:after {
+      transform: scaleX(1);
+      transform-origin: 0 0;
+    }
+  }
+}
+.nav2{
+    display: flex;
+    flex-direction: row;
+}

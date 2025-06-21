@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Action</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <style>
+            body{
+                background-color: black;
+                color:white
+                }
+            .container{
+                display:grid;
+                grid-template-columns: auto;
+                grid-template-rows: 50px 2200px 80px;
+                grid-template-areas:"nav nav nav"
+                "main main main"
+                "footer footer footer" ;
+                width: 100%;
+                height: 100vh;
+            }
+            .nav{
+                grid-area: nav;
+                display:flex;
+                flex-direction: row;
+                justify-content: space-between;
+            }
+            .logo{
+                flex-direction: row;
+                display: flex;
+            }
+            #nav1{
+                display:flex;
+                margin-left: 500px;
+            }
+            #nav1 p{
+                padding-left: 60px;
+                padding-right: 3px;
+            }
+            .main{
+                grid-area: main;
+                margin-top: 50px;
+            }
+            .m1{
+                display: flex;
+                flex-direction: row;
+            }
+            .images{
+                padding-top: 100px;
+                padding-bottom: 30px;
+              display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+            }
+            .images1{
+                display: flex;
+                flex-direction: row;
+                padding-bottom: 50px;
+                justify-content: space-around;
+            }
+            .images2{
+                display: flex;
+                flex-direction: row;
+                padding-bottom: 50px;
+                justify-content: space-around;
+            }
+            .images3{
+                display: flex;
+                flex-direction: row;
+                padding-bottom: 50px;
+                justify-content: space-around;
+            }
+            .images4{
+                display: flex;
+                flex-direction: row;
+                padding-bottom: 50px;
+                justify-content: space-around;
+            }
+            .images5{
+                display: flex;
+                flex-direction: row;
+                padding-bottom: 50px;
+                justify-content: space-around;
+            }
+            .footer{
+                grid-area: footer;
+            }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="nav">
+            <div class="logo">
+            <img style="padding-top: 20px;padding-left: 10px;" src="./images/Screenshot 2025-06-18 205657.png" width="30px" height="30px">
+            <span><h1 style="font-size: 30px;padding-left: 5px;color: crimson;">EXA</h1></span>
+            </div>
+            <nav id="nav1">
+               <p><button style="padding-right: 300px;border: none;border-radius: 5px;padding-top: 6px;padding-bottom: 6px;"><i class="fas fa-search"></i>Search</button></p>
+               <p style="padding-top: 2px;"><a href="./project.html" style="text-decoration: none;color:white">Home</a></p>
+               <p style="margin-right: 5px;"><img src="./images/Screenshot 2025-06-17 212301.png" width="20px" height="20px"></p>
+            </nav>
+            </div>
+            <div class="main">
+                <h2 style="text-align: center;color: crimson;font-size: 28px;padding-bottom: 20px;">Action</h3>
+                <div class="m1">
+                <button style="background-color: rgba(59, 58, 58, 0.372);border-radius: 4px;color:white;border: none;padding: 8px;margin-left: 30px;height: 32px;">Search..<span style="padding-left: 150px;"><i class="fas fa-search" style="color: white;"></i></span></button>
+                <button id="btn" style="background-color: rgba(59, 58, 58, 0.372);color:white;border: none;padding: 8px;border-radius: 4px;padding-right: 150px;margin-left: 30px;cursor: pointer;position: relative;height: 32px;">Type</button>
+                 <nav id="nav2" style="display: none; z-index: 2; background-color: rgba(42, 42, 42, 0.299); height: 250px;">
+                        <p>Movies</p>
+                        <p>Tv series</p>
+                        <p>Anime</p>
+                        <p>K-Drama</p>
+                        <p>C-Drama</p>
+                    </nav>
+                <button style="background-color: rgba(59, 58, 58, 0.372);color:white;border: none;border-radius: 4px;padding: 8px;padding-right: 150px;margin-left: 30px;height: 32px;">Ongoing</button>
+                <button style="background-color: rgba(59, 58, 58, 0.372);color:white;border-radius: 4px;border: none;padding: 8px;padding-right: 150px;margin-left: 30px;height: 32px;">Released date</button>
+                <button style="background-color: rgba(59, 58, 58, 0.372);color:white;border-radius: 4px;border: none;padding: 8px;margin-left: 30px;height: 32px;">Filter<i style="padding-left: 150px;" class="fas fa-filter"></i></button>
+                </div>
+                <div class="images">
+                <div class="i1" style="padding-bottom: 50px;">
+                <img src="https://tse1.mm.bing.net/th?id=OIP.xgNqw4utp_IWPAqFQMDnGwHaKo&pid=Api&P=0&h=180" width="260px" height="200px" alt="BlueLock" style="margin: 2px;"> 
+                <p style="margin: 2px;margin-left: 35px;font-size: 15px;">Solo Levelling           <span style="margin-left: 40px;">8.3 / 10<img src="./images/download (5).png"></span></p>    
+                </div>
+                <div class="i2">
+                <img src="https://tse3.mm.bing.net/th?id=OIP.yhHYRG4qMPyWsd-ikkKTmAHaFj&pid=Api&P=0&h=180" width="260px" height="200px">
+                 <p style="margin: 2px;margin-left: 35px;font-size: 15px;">WEAK HERO           <span style="margin-left: 40px;">8.4 / 10<img src="./images/download (5).png"></span></p>    
+                </div>
+                <div class="i3">    
+                <img src="https://tse2.mm.bing.net/th?id=OIP.YPqMDMCsgL8YasZ6yj_UNAHaLH&pid=Api&P=0&h=180" width="260px" height="200px">
+                 <p style="margin: 2px;margin-left: 15px;font-size: 15px;">Jujutsu Kaisen          <span style="margin-left: 40px;">8.5 / 10<img src="./images/download (5).png"></span></p>    
+                </div>
+                <div class="i4">
+                <img src="https://tse2.mm.bing.net/th?id=OIP.5hy0jX4xMKpvRTybdctIzQHaFj&pid=Api&P=0&h=180" width="260px" height="200px">
+                 <p style="margin: 2px;margin-left: 15px;font-size: 15px;">Naruto          <span style="margin-left: 40px;">8.4 / 10<img src="./images/download (5).png"></span></p>    
+                </div>
+                </div>
+                <div class="images1">
+                <div class="i1">
+                <img src="https://tse3.mm.bing.net/th?id=OIP.Ya13KxlkjAiQy-KKk3FNqwHaLH&pid=Api&P=0&h=180" width="260px" height="200px" alt="BlueLock" style="margin: 2px;"> 
+                <p style="margin: 2px;font-size: 15px;">Demon Slayer:<br> Kimetsu no Yaiba (2019)        <span style="margin-left: 40px;">8.6 / 10<img src="./images/download (5).png"></span></p>    
+                </div>
+                <div class="i2">
+                <img src="https://tse1.mm.bing.net/th?id=OIP.KI8oVOeRsmV0Tra6WutJywHaF7&pid=Api&P=0&h=180" width="260px" height="200px">
+                 <p style="margin: 2px;margin-left: 35px;font-size: 15px;">One Piece      <span style="margin-left: 40px;">8.73 / 10<img src="./images/download (5).png"></span></p>    
+                </div>
+                <div class="i3">    
+                <img src="https://tse2.mm.bing.net/th?id=OIP.kRrOhHrpjc_aGf1GfF9_4wHaHa&pid=Api&P=0&h=180" width="260px" height="200px">
+                 <p style="margin: 2px;margin-left: 15px;font-size: 15px;">Noragami          <span style="margin-left: 10px;">7.94 / 10<img src="./images/download (5).png"></span></p>    
+                </div>
+                <div class="i4">
+                <img src="https://tse3.mm.bing.net/th?id=OIP.zyjrplFM8I2kWTRwRdBxzAHaK9&pid=Api&P=0&h=180" width="260px" height="200px">
+                 <p style="margin: 2px;margin-left: 15px;font-size: 15px;">BloodHounds          <span style="margin-left: 40px;">9.0 / 10<img src="./images/download (5).png"></span></p>    
+                </div>
+                </div>
+                 <div class="images2">
+                <div class="i1">
+                <img src="https://tse3.mm.bing.net/th?id=OIP.uQKU_BLREpjal4oA3WOHJAHaKm&pid=Api&P=0&h=180" width="260px" height="200px" alt="BlueLock" style="margin: 2px;"> 
+                <p style="margin: 2px;margin-left: 35px;font-size: 15px;">Vincenzo (2021)           <span style="margin-left: 40px;">9.1 / 10<img src="./images/download (5).png"></span></p>    
+                </div>
+                <div class="i2">
+                <img src="https://tse3.mm.bing.net/th?id=OIP.iuWfAOeXW3m-rzuwKh8-0QHaFj&pid=Api&P=0&h=180" width="260px" height="200px">
+                 <p style="margin: 2px;margin-left: 35px;font-size: 15px;">Mouse          <span style="margin-left: 40px;">6.1 / 10<img src="./images/download (5).png"></span></p>    
+                </div>
+                <div class="i3">    
+                <img src="https://tse1.mm.bing.net/th?id=OIP.sknZ6I21YY1N6UblwYf-iQHaK5&pid=Api&P=0&h=180" width="260px" height="200px">
+                 <p style="margin: 2px;margin-left: 15px;font-size: 15px;">My Name (2021)          <span style="margin-left: 40px;">8.7 / 10<img src="./images/download (5).png"></span></p>    
+                </div>
+                <div class="i4">
+                <img src="https://tse2.mm.bing.net/th?id=OIP.mPXq6yfT19lU8OJkxgj-0gHaKt&pid=Api&P=0&h=180" width="260px" height="200px">
+                 <p style="margin: 2px;margin-left: 15px;font-size: 15px;">The K2 (2016)          <span style="margin-left: 40px;">9.4 / 10<img src="./images/download (5).png"></span></p>    
+                </div>
+                </div>
+                 <div class="images3">
+                <div class="i1">
+                <img src="https://tse3.mm.bing.net/th?id=OIP.CEM0H78Haqit_lQgdOeuswHaLH&pid=Api&P=0&h=180" width="260px" height="200px" alt="BlueLock" style="margin: 2px;"> 
+                <p style="margin: 2px;margin-left: 10px;font-size: 15px;">Ultimate Note (2020)          <span style="margin-left: 40px;">9.0 / 10<img src="./images/download (5).png"></span></p>    
+                </div>
+                <div class="i2">
+                <img src="https://tse4.mm.bing.net/th?id=OIP.5Klr1Dul44JiqGIlQaxxAwHaEK&pid=Api&P=0&h=180" width="260px" height="200px">
+                 <p style="margin: 2px;margin-left: 10px;font-size: 15px;">Psych Hunter (2020)          <span style="margin-left: 40px;">8.5 / 10<img src="./images/download (5).png"></span></p>    
+                </div>
+                <div class="i3">    
+                <img src="https://tse3.mm.bing.net/th?id=OIP.rcMSipkGEp7OjRdQffbf8gHaLH&pid=Api&P=0&h=180" width="260px" height="200px">
+                 <p style="margin: 2px;margin-left: 15px;font-size: 15px;">Arsenal Military Academy <br>(2019)          <span style="margin-left: 150px;">9.5 / 10<img src="./images/download (5).png"></span></p>    
+                </div>
+                <div class="i4">
+                <img src="https://tse1.mm.bing.net/th?id=OIP.ii9XGZ7PCMleNGEUvASlGwHaLH&pid=Api&P=0&h=180" width="260px" height="200px">
+                 <p style="margin: 2px;margin-left: 15px;font-size: 15px;">Ever Night (2018)          <span style="margin-left: 40px;">8.4 / 10<img src="./images/download (5).png"></span></p>    
+                </div>
+                </div>
+                 <div class="images4">
+                <div class="i1">
+                <img src="https://tse1.mm.bing.net/th?id=OIP.e-vMWeM2_7yTZtS6ra0xpwAAAA&pid=Api&P=0&h=180" width="260px" height="200px" alt="BlueLock" style="margin: 2px;"> 
+                <p style="margin: 2px;margin-left: 5px;font-size: 15px;">Never Say Never (2019)           <span style="margin-left: 40px;">7.8 / 10<img src="./images/download (5).png"></span></p>    
+                </div>
+                <div class="i2">
+                <img src="https://tse3.mm.bing.net/th?id=OIP.Ng_ecAkAFfTndTQVU-IPLQAAAA&pid=Api&P=0&h=180" width="260px" height="200px">
+                 <p style="margin: 2px;margin-left: 5px;font-size: 15px;">Glory of the Special Forces <br>(2022)          <span style="margin-left: 150px;">7.3 / 10<img src="./images/download (5).png"></span></p>    
+                </div>
+                <div class="i3">    
+                <img src="https://tse2.mm.bing.net/th?id=OIP.6v8_5BSTnT0rJwRHjEUn6AAAAA&pid=Api&P=0&h=180" width="260px" height="200px">
+                 <p style="margin: 2px;margin-left: 15px;font-size: 15px;">Kalki 2898 AD          <span style="margin-left: 40px;">3 / 5<img src="./images/download (5).png"></span></p>    
+                </div>
+                <div class="i4">
+                <img src="https://tse1.mm.bing.net/th?id=OIP.O6Dfm9HMcFl4f3fVfsnG_AHaKX&pid=Api&P=0&h=180" width="260px" height="200px">
+                 <p style="margin: 2px;margin-left: 35px;font-size: 15px;">Devara          <span style="margin-left: 40px;">3 / 5<img src="./images/download (5).png"></span></p>    
+                </div>
+                </div>
+                 <div class="images5">
+                <div class="i1">
+                <img src="https://tse3.mm.bing.net/th?id=OIP.c1mgTlFSh53mcCOYzlI1JgHaEK&pid=Api&P=0&h=180" width="260px" height="200px" alt="BlueLock" style="margin: 2px;"> 
+                <p style="margin: 2px;margin-left: 5px;font-size: 15px;">Mission: Impossible - <br>The Final Reckoning           <span style="margin-left: 70px;">7.5 / 10<img src="./images/download (5).png"></span></p>    
+                </div>
+                <div class="i2">
+                <img src="https://tse3.mm.bing.net/th?id=OIP.M6AyxR-KDwk5KSJw1MtaYwHaF7&pid=Api&P=0&h=180" width="260px" height="200px">
+                 <p style="margin: 2px;margin-left: 35px;font-size: 15px;">Bleach          <span style="margin-left: 40px;">8 / 10<img src="./images/download (5).png"></span></p>    
+                </div>
+                <div class="i3">    
+                <img src="https://tse1.mm.bing.net/th?id=OIP.10v8V6c-7_SARsN7zGjq5QHaIa&pid=Api&P=0&h=180" width="260px" height="200px">
+                 <p style="margin: 2px;margin-left: 15px;font-size: 15px;">Nanatsu no Taizai          <span style="margin-left: 40px;">7.6 / 10<img src="./images/download (5).png"></span></p>    
+                </div>
+                <div class="i4">
+                <img src="https://tse2.mm.bing.net/th?id=OIP.JupxEkzJH5HO2U9hP2Qu4gHaLH&pid=Api&P=0&h=180" width="260px" height="200px">
+                 <p style="margin: 2px;margin-left: 15px;font-size: 15px;">Damsel          <span style="margin-left: 40px;">5.5 / 10<img src="./images/download (5).png"></span></p>    
+                </div>
+                </div>
+            </div>
+            <div class="footer">
+                <hr>
+            <p style="cursor: pointer;float: right;padding-bottom: 20px;">REQUEST  <span style="padding-left: 20px;">CONTACT</span></p>
+            <h3 style="padding-left: 30px;padding-top: 20px;">Copyright ©EXA.All Rights Reserved</h4>
+            <p style="font-size: 16px;padding-left: 30px;">This site does not store any files on its server. All contents are provided by non-affiliated third parties.</p>
+            <h1 style="float: right;padding-right: 10px;padding-bottom: 10px;color: crimson;"><img src="./images/Screenshot 2025-06-18 205657.png" width="20px" height="20px">EXA</h1>
+            </div>
+    </div>
+</body>
+<script>
+    $(document).ready(function(){
+           $("#btn").click(function(){
+            $("#nav2").slideToggle(1000);
+        });
+    });
+</script>
+</html>

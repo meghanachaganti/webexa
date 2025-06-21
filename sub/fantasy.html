@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fantasy</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <style>
+            body{
+                background-color: black;
+                color:white
+                }
+            .container{
+                display:grid;
+                grid-template-columns: auto;
+                grid-template-rows: 50px 2200px 80px;
+                grid-template-areas:"nav nav nav"
+                "main main main"
+                "footer footer footer" ;
+                width: 100%;
+                height: 100vh;
+            }
+            .nav{
+                grid-area: nav;
+                display:flex;
+                flex-direction: row;
+                justify-content: space-between;
+            }
+            .logo{
+                flex-direction: row;
+                display: flex;
+            }
+            #nav1{
+                display:flex;
+                margin-left: 500px;
+            }
+            #nav1 p{
+                padding-left: 60px;
+                padding-right: 3px;
+            }
+            .main{
+                grid-area: main;
+                margin-top: 50px;
+            }
+            .m1{
+                display: flex;
+                flex-direction: row;
+            }
+            .images{
+                padding-top: 100px;
+                padding-bottom: 30px;
+              display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+            }
+            .images1{
+                display: flex;
+                flex-direction: row;
+                padding-bottom: 50px;
+                justify-content: space-around;
+            }
+            .images2{
+                display: flex;
+                flex-direction: row;
+                padding-bottom: 50px;
+                justify-content: space-around;
+            }
+            .images3{
+                display: flex;
+                flex-direction: row;
+                padding-bottom: 50px;
+                justify-content: space-around;
+            }
+            .images4{
+                display: flex;
+                flex-direction: row;
+                padding-bottom: 50px;
+                justify-content: space-around;
+            }
+            .images5{
+                display: flex;
+                flex-direction: row;
+                padding-bottom: 50px;
+                justify-content: space-around;
+            }
+            .footer{
+                grid-area: footer;
+            }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="nav">
+            <div class="logo">
+            <img style="padding-top: 20px;padding-left: 10px;" src="./images/Screenshot 2025-06-18 205657.png" width="30px" height="30px">
+            <span><h1 style="font-size: 30px;padding-left: 5px;color: crimson;">EXA</h1></span>
+            </div>
+            <nav id="nav1">
+               <p><button style="padding-right: 300px;border: none;border-radius: 5px;padding-top: 6px;padding-bottom: 6px;"><i class="fas fa-search"></i>Search</button></p>
+               <p style="padding-top: 2px;"><a href="./project.html" style="text-decoration: none;color:white">Home</a></p>
+               <p style="margin-right: 5px;"><img src="./images/Screenshot 2025-06-17 212301.png" width="20px" height="20px"></p>
+            </nav>
+            </div>
+            <div class="main">
+                <h2 style="text-align: center;color: crimson;font-size: 28px;padding-bottom: 20px;">Fanatsy</h3>
+                <div class="m1">
+                <button style="background-color: rgba(59, 58, 58, 0.372);border-radius: 4px;color:white;border: none;padding: 8px;margin-left: 30px;height: 32px;">Search..<span style="padding-left: 150px;"><i class="fas fa-search" style="color: white;"></i></span></button>
+                <button id="btn" style="background-color: rgba(59, 58, 58, 0.372);color:white;border: none;padding: 8px;border-radius: 4px;padding-right: 150px;margin-left: 30px;cursor: pointer;position: relative;height: 32px;">Type</button>
+                 <nav id="nav2" style="display: none; z-index: 2; background-color: rgba(42, 42, 42, 0.299); height: 250px;">
+                        <p>Movies</p>
+                        <p>Tv series</p>
+                        <p>Anime</p>
+                        <p>K-Drama</p>
+                        <p>C-Drama</p>
+                    </nav>
+                <button style="background-color: rgba(59, 58, 58, 0.372);color:white;border: none;border-radius: 4px;padding: 8px;padding-right: 150px;margin-left: 30px;height: 32px;">Ongoing</button>
+                <button style="background-color: rgba(59, 58, 58, 0.372);color:white;border-radius: 4px;border: none;padding: 8px;padding-right: 150px;margin-left: 30px;height: 32px;">Released date</button>
+                <button style="background-color: rgba(59, 58, 58, 0.372);color:white;border-radius: 4px;border: none;padding: 8px;margin-left: 30px;height: 32px;">Filter<i style="padding-left: 150px;" class="fas fa-filter"></i></button>
+                </div>
+                <div class="images">
+                <div class="i1" style="padding-bottom: 50px;">
+                <img src="https://imgix.ranker.com/user_node_img/4397/87921706/original/solo-leveling-u1191110766?auto=format&q=60&fit=crop&fm=pjpg&dpr=2&w=500" width="260px" height="200px">
+                 <p style="margin: 2px;margin-left: 15px;font-size: 15px;">Solo Leveling Season 2:<br> Arise from the Shadow          <span style="margin-left: 80px;">8.5 / 10<img src="./images/download (5).png"></span></p>    
+                </div>
+                <div class="i2">
+                <img src="https://imgix.ranker.com/user_node_img/4407/88125488/original/zenshu-u-1083913527?auto=format&q=60&fit=crop&fm=pjpg&dpr=2&w=500" width="260px" height="200px">
+                 <p style="margin: 2px;margin-left: 35px;font-size: 15px;">  Zenshu        <span style="margin-left: 40px;">7.3 / 10<img src="./images/download (5).png"></span></p>    
+                </div>
+                <div class="i3">    
+                <img src="https://imgix.ranker.com/user_node_img/50150/1002997501/original/1002997501-photo-u-1827230133?auto=format&q=60&fit=crop&fm=pjpg&dpr=2&w=500" width="260px" height="200px">
+                 <p style="margin: 2px;margin-left: 15px;font-size: 15px;">Gachiakuta       <span style="margin-left: 40px;">7.9 / 10<img src="./images/download (5).png"></span></p>    
+                </div>
+                <div class="i4">
+                <img src="https://i.mydramalist.com/RApq6c.jpg" width="260px" height="200px">
+                 <p style="margin: 2px;margin-left: 15px;font-size: 15px;">Hotel del Luna         <span style="margin-left: 40px;">8.1 / 10<img src="./images/download (5).png"></span></p>    
+                </div>
+                </div>
+                <div class="images1">
+                <div class="i1">
+                <img src="https://tse3.mm.bing.net/th?id=OIP.Ya13KxlkjAiQy-KKk3FNqwHaLH&pid=Api&P=0&h=180" width="260px" height="200px"  style="margin: 2px;"> 
+                <p style="margin: 2px;font-size: 15px;">Demon Slayer:<br> Kimetsu no Yaiba (2019)        <span style="margin-left: 40px;">8.6 / 10<img src="./images/download (5).png"></span></p>    
+                </div>
+                <div class="i2">
+                <img src="https://i.mydramalist.com/xnNnq_4c.jpg?v=1" width="260px" height="200px">
+                 <p style="margin: 2px;margin-left: 35px;font-size: 15px;"> 18 Again      <span style="margin-left: 40px;">8.5 / 10<img src="./images/download (5).png"></span></p>    
+                </div>
+                <div class="i3">    
+                <img src="https://i.mydramalist.com/qjBQ2_4c.jpg?v=1" width="260px" height="200px">
+                 <p style="margin: 2px;margin-left: 15px;font-size: 15px;"> Tomorrow          <span style="margin-left: 10px;">8.0 / 10<img src="./images/download (5).png"></span></p>    
+                </div>
+                <div class="i4">
+                <img src="https://i.mydramalist.com/OrP1dc.jpg?v=1" width="260px" height="200px">
+                 <p style="margin: 2px;margin-left: 15px;font-size: 15px;"> A Korean Odyssey          <span style="margin-left: 40px;">8.0 / 10<img src="./images/download (5).png"></span></p>    
+                </div>
+                </div>
+                 <div class="images2">
+                <div class="i1">
+                <img src="https://i.mydramalist.com/EpOqOc.jpg?v=1" width="260px" height="200px"  style="margin: 2px;"> 
+                <p style="margin: 2px;margin-left: 35px;font-size: 15px;"> Born Again           <span style="margin-left: 40px;">7.5 / 10<img src="./images/download (5).png"></span></p>    
+                </div>
+                <div class="i2">
+                <img src="https://i.mydramalist.com/ZgYg8c.jpg?v=1" width="260px" height="200px">
+                 <p style="margin: 2px;margin-left: 35px;font-size: 15px;">Where Stars Land          <span style="margin-left: 40px;">8.0 / 10<img src="./images/download (5).png"></span></p>    
+                </div>
+                <div class="i3">    
+                <img src="https://i.mydramalist.com/9oVZEc.jpg?v=1" width="260px" height="200px">
+                 <p style="margin: 2px;margin-left: 15px;font-size: 15px;">Queen In Hyun's Man         <span style="margin-left: 40px;">8.0 / 10<img src="./images/download (5).png"></span></p>    
+                </div>
+                <div class="i4">
+                <img src="https://i.mydramalist.com/zBb8dz_4c.jpg?v=1" width="260px" height="200px">
+                 <p style="margin: 2px;margin-left: 15px;font-size: 15px;">The Blossoming Love         <span style="margin-left: 40px;">8.3 / 10<img src="./images/download (5).png"></span></p>    
+                </div>
+                </div>
+                 <div class="images3">
+                <div class="i1">
+                <img src="https://i.mydramalist.com/Px4Bq3_4c.jpg?v=1" width="260px" height="200px"  style="margin: 2px;"> 
+                <p style="margin: 2px;margin-left: 10px;font-size: 15px;">The Glory          <span style="margin-left: 40px;">8.3 / 10<img src="./images/download (5).png"></span></p>    
+                </div>
+                <div class="i2">
+                <img src="https://i.mydramalist.com/zBb3RP_4c.jpg?v=1" width="260px" height="200px">
+                 <p style="margin: 2px;margin-left: 10px;font-size: 15px;">Towards the Truth          <span style="margin-left: 40px;">7.6 / 10<img src="./images/download (5).png"></span></p>    
+                </div>
+                <div class="i3">    
+                <img src="https://i.mydramalist.com/l0PnP4_4c.jpg?v=1" width="260px" height="200px">
+                 <p style="margin: 2px;margin-left: 15px;font-size: 15px;">Bright Moon Citation         <span style="margin-left: 40px;">7.0 / 10<img src="./images/download (5).png"></span></p>    
+                </div>
+                <div class="i4">
+                <img src="https://i.mydramalist.com/zBbLAz_4c.jpg?v=1" width="260px" height="200px">
+                 <p style="margin: 2px;margin-left: 15px;font-size: 15px;">Moonlight Mystique         <span style="margin-left: 40px;">8.6 / 10<img src="./images/download (5).png"></span></p>    
+                </div>
+                </div>
+                 <div class="images4">
+                <div class="i1">
+                <img src="https://i.mydramalist.com/O8okOQ_4c.jpg?v=1" width="260px" height="200px"  style="margin: 2px;"> 
+                <p style="margin: 2px;margin-left: 5px;font-size: 15px;">Reunion as First Sight          <span style="margin-left: 40px;">6.9 / 10<img src="./images/download (5).png"></span></p>    
+                </div>
+                <div class="i2">
+                <img src="https://i.mydramalist.com/zBDPBP_4c.jpg?v=1" width="260px" height="200px">
+                 <p style="margin: 2px;margin-left: 5px;font-size: 15px;">Under the Moonlight         <span style="margin-left: 150px;">7.7 / 10<img src="./images/download (5).png"></span></p>    
+                </div>
+                <div class="i3">    
+                <img src="https://i.mydramalist.com/YYlLOz_4c.jpg?v=1" width="260px" height="200px">
+                 <p style="margin: 2px;margin-left: 15px;font-size: 15px;">Always My General          <span style="margin-left: 40px;">7.2 / 10<img src="./images/download (5).png"></span></p>    
+                </div>
+                <div class="i4">
+                <img src="https://i.mydramalist.com/oQDbPE_4c.jpg?v=1" width="260px" height="200px">
+                 <p style="margin: 2px;margin-left: 35px;font-size: 15px;">Stolen Love         <span style="margin-left: 40px;">7.3 / 10<img src="./images/download (5).png"></span></p>    
+                </div>
+                </div>
+                 <div class="images5">
+                <div class="i1">
+                <img src="https://i.mydramalist.com/YYlwrB_4c.jpg?v=1" width="260px" height="200px"  style="margin: 2px;"> 
+                <p style="margin: 2px;margin-left: 5px;font-size: 15px;">Reborn in Vengeance           <span style="margin-left: 70px;">6.4 / 10<img src="./images/download (5).png"></span></p>    
+                </div>
+                <div class="i2">
+                <img src="https://i.mydramalist.com/eYwEWE_4c.jpg?v=1" width="260px" height="200px">
+                 <p style="margin: 2px;margin-left: 35px;font-size: 15px;">Everlasting Longing          <span style="margin-left: 40px;">7.9 / 10<img src="./images/download (5).png"></span></p>    
+                </div>
+                <div class="i3">    
+                <img src="https://i.mydramalist.com/5v81wY_4c.jpg?v=1" width="260px" height="200px">
+                 <p style="margin: 2px;margin-left: 15px;font-size: 15px;">Millennium Heart          <span style="margin-left: 40px;">7.2 / 10<img src="./images/download (5).png"></span></p>    
+                </div>
+                <div class="i4">
+                <img src="https://i.mydramalist.com/NdN6XY_4c.jpg?v=1" width="260px" height="200px">
+                 <p style="margin: 2px;margin-left: 15px;font-size: 15px;">Perfect Match         <span style="margin-left: 40px;">8.4 / 10<img src="./images/download (5).png"></span></p>    
+                </div>
+                </div>
+            </div>
+            <div class="footer">
+                <hr>
+            <p style="cursor: pointer;float: right;padding-bottom: 20px;">REQUEST  <span style="padding-left: 20px;">CONTACT</span></p>
+            <h3 style="padding-left: 30px;padding-top: 20px;">Copyright ©EXA.All Rights Reserved</h4>
+            <p style="font-size: 16px;padding-left: 30px;">This site does not store any files on its server. All contents are provided by non-affiliated third parties.</p>
+            <h1 style="float: right;padding-right: 10px;padding-bottom: 10px;color: crimson;"><img src="./images/Screenshot 2025-06-18 205657.png" width="20px" height="20px">EXA</h1>
+            </div>
+    </div>
+</body>
+<script>
+    $(document).ready(function(){
+           $("#btn").click(function(){
+            $("#nav2").slideToggle(1000);
+        });
+    });
+</script>
+</html>

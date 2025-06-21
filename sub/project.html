@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EXA</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        body{
+    margin:0;
+    padding: 0;
+    background-color: black;
+    color:white;
+}
+.container{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 100px  900px 800px 100px;
+    grid-template-areas: "nav nav nav"
+    "main main main"
+    "submain submain submain"
+    "footer footer footer";
+}
+.nav{
+    display: flex;
+    margin-top: 10px;
+    grid-area: nav;
+   justify-content: center;
+   z-index: 1;
+}
+#nav1{
+    position: relative;
+}
+.main{
+    background: url(./images/ChatGPT\ Image\ Jun\ 21\,\ 2025\,\ 10_52_46\ AM.png);
+    background-size:cover;
+   margin-top: 60px;
+    grid-area: main;
+   display: flex;
+   flex-direction: column;
+   width:100%;
+   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.submain{
+    padding-top: 250px;
+    grid-area: submain;
+    text-align: center;
+}
+.footer{
+    grid-area: footer;
+}
+#nav1 ul{
+  display: flex;
+}
+#nav1 ul li{
+    padding-right:  40px;
+}
+.main h1{
+    text-align: center;
+    color:crimson;
+}
+button
+{
+   padding-top: 10px;
+   padding-bottom: 10px;
+    margin: auto;
+    text-align: left;
+    border-radius: 25px;
+    border:none;
+}
+#btn1:hover{
+    cursor: pointer;
+}
+button:hover{
+    cursor:text;
+}
+#searchbtn:hover{
+    cursor: pointer;
+}
+.link_underline {
+  line-height: 1.25;
+  place-self: center;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  position:relative;
+  &:after {
+    position: absolute;
+    content: "";
+    bottom: -3px;
+    left: 0;
+    width: 60%;
+    border-bottom: 2px solid;
+    transform: scaleX(0);
+    color: crimson;
+    transform-origin: 100% 100%;
+    transition: transform .6s;
+    transition-timing-function: cubic-bezier(.39,.575,.28,.995);
+  }
+  &:hover {
+    &:after {
+      transform: scaleX(1);
+      transform-origin: 0 0;
+    }
+  }
+}
+.link_underline2 {
+  line-height: 1.25;
+  place-self: center;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  position:relative;
+  &:after {
+    position: absolute;
+    content: "";
+    bottom: -3px;
+    left: 0;
+    width: 60%;
+    border-bottom: 2px solid;
+    transform: scaleX(0);
+    color: crimson;
+    transform-origin: 100% 100%;
+    transition: transform .6s;
+    transition-timing-function: cubic-bezier(.39,.575,.28,.995);
+  }
+  &:hover {
+    &:after {
+      transform: scaleX(1);
+      transform-origin: 0 0;
+    }
+  }
+}
+.link_underline3 {
+  line-height: 1.25;
+  place-self: center;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  position:relative;
+  &:after {
+    position: absolute;
+    content: "";
+    bottom: -3px;
+    left: 0;
+    width: 60%;
+    border-bottom: 2px solid;
+    transform: scaleX(0);
+    color: crimson;
+    transform-origin: 100% 100%;
+    transition: transform .6s;
+    transition-timing-function: cubic-bezier(.39,.575,.28,.995);
+  }
+  &:hover {
+    &:after {
+      transform: scaleX(1);
+      transform-origin: 0 0;
+    }
+  }
+}
+.link_underline4{
+  line-height: 1.25;
+  place-self: center;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  position:relative;
+  &:after {
+    position: absolute;
+    content: "";
+    bottom: -3px;
+    left: 0;
+    width: 60%;
+    border-bottom: 2px solid;
+    transform: scaleX(0);
+    color: crimson;
+    transform-origin: 100% 100%;
+    transition: transform .6s;
+    transition-timing-function: cubic-bezier(.39,.575,.28,.995);
+  }
+  &:hover {
+    &:after {
+      transform: scaleX(1);
+      transform-origin: 0 0;
+    }
+  }
+}
+.nav2{
+    display: flex;
+    flex-direction: row;
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="nav">
+            <nav id="nav1">
+                <ul style="list-style: none;">
+                    <li id="li1"  class="link_underline" style="cursor: pointer;position: relative;">GENRES</li>
+                    <nav id="nav2" style="display: none; z-index: 2; background-color: rgba(42, 42, 42, 0.299); height: 200px;">
+                <div style="display: flex; gap: 40px;">
+                    <div class="nav2-left">
+                    <p><a href="./action.html" style="text-decoration: none; color: white;">Action</a></p>
+                    <p><a href="./comedy.html" style="text-decoration: none; color: white;">Comedy</a></p>
+                    <p><a href="./drama.html" style="text-decoration: none; color: white;">Drama</a></p>
+                    <p><a href="./fantasy.html" style="text-decoration: none; color: white;">Fantasy</a></p>
+                    <p><a href="./horror.html" style="text-decoration: none; color: white;">Horror</a></p>
+                    </div>
+                </div>
+                </nav>
+                    <li id="li2" class="link_underline2" style="cursor: pointer;position: relative;">TYPES</li>
+                    <nav id="nav3" style="display: none;z-index: 3;padding-bottom: 3px;background-color: rgba(42, 42, 42, 0.299);height: 200px;">
+                        <p><a href="./Movies.html" style="text-decoration: none; color: white;">Movies</a></p>
+                        <p><a href="./tvseries.html" style="text-decoration: none; color: white;">Tv series</a></p>
+                        <p><a href="./anime.html" style="text-decoration: none; color: white;">Anime</a></p>
+                        <p><a href="./k-drama.html" style="text-decoration: none; color: white;">K-Drama</a></p>
+                        <p><a href="./c-drama.html" style="text-decoration: none; color: white;">C-Drama</a></p>
+                    </nav>
+                    <li id="li3" class="link_underline3" style="cursor: pointer;"><a href="./updateweb.html" style="text-decoration: none; color: white;">UPDATES</a></li>
+                    <li id="li4" class="link_underline4" style="cursor: pointer;"><a href="./login.html" style="text-decoration: none; color: white;">LOG-IN</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="main">
+            <h1 style="margin: 5px;font-size: 50px;margin-top: 250px;">EXA</h1>
+            <button style="margin: 5px;margin-left: 450px;margin-right: 450px;font-size: 15px;color: grey;"><i class="fas fa-search" style="padding-right: 5px;padding-left: 2px;color: black;"></i> Search for content <span style="padding-left: 450px;padding-right: 1px;color: black;margin-bottom: 10px;"><i class="fas fa-filter" style="padding-right: 2px;"></i>Filter</span></button>
+            <p style="margin: 5px;text-align: center;font-size: 15px;">One Piece, Demon Slayer, When i fly towards you<br>
+            Falling into your smile, Strong woman do bong soon</p>
+            <button  id="btn1" style="margin: 5px;margin-left: 650px;margin-right: 650px;background-color: crimson;padding-left: 20px;padding-right: 20px;margin-top: 5px;border-radius: 5px;text-align: center;font-size: 18px;"><a href="./subproject.html" style="text-decoration: none;color: white;">Go to EXA</a></button>
+        </div>
+        <div  class="submain">
+            <h3 style="font-size: 30px;">Watch Favorite Shows For Free - Legally and Safely!</h3>
+            <p>Streaming your favorite TV shows doesnt have to cost a fortune! <br><b>EXA</b> is one platform offering <b>free, legal</b> access to classic and trending series.</p>
+            <p>✅ Why Choose Legal Free Streaming?<br><br>
+                - No subscription fees – Enjoy shows without monthly payments.<br><br>
+                - Safe & secure – No malware or risky pop-ups.<br><br>
+                - Support creators – Watch through official platforms that benefit the industry.</p>
+        </div>
+        <div  class="footer">
+              <hr>
+            <p style="cursor: pointer;float: right;padding-bottom: 20px;">REQUEST  <span style="padding-left: 20px;">CONTACT</span></p>
+            <h3 style="padding-left: 30px;padding-top: 20px;">Copyright ©EXA.All Rights Reserved</h4>
+            <p style="font-size: 16px;padding-left: 30px;">This site does not store any files on its server. All contents are provided by non-affiliated third parties.</p>
+            <h1 style="float: right;padding-right: 10px;padding-bottom: 10px;color: crimson;"><img src="./images/Screenshot 2025-06-18 205657.png" width="20px" height="20px">EXA</h1>
+        </div>
+    </div>
+</body>
+<script>
+    $(document).ready(function(){
+        $("#li1").click(function(){
+            $("#nav2").slideToggle(1000);
+        });
+        $("#li2").click(function(){
+            $("#nav3").slideToggle(1000);
+        });
+    });
+    </script>
+</html>

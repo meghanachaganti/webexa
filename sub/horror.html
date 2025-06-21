@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horror</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <style>
+            body{
+                background-color: black;
+                color:white
+                }
+            .container{
+                display:grid;
+                grid-template-columns: auto;
+                grid-template-rows: 50px 2200px 80px;
+                grid-template-areas:"nav nav nav"
+                "main main main"
+                "footer footer footer" ;
+                width: 100%;
+                height: 100vh;
+            }
+            .nav{
+                grid-area: nav;
+                display:flex;
+                flex-direction: row;
+                justify-content: space-between;
+            }
+            .logo{
+                flex-direction: row;
+                display: flex;
+            }
+            #nav1{
+                display:flex;
+                margin-left: 500px;
+            }
+            #nav1 p{
+                padding-left: 60px;
+                padding-right: 3px;
+            }
+            .main{
+                grid-area: main;
+                margin-top: 50px;
+            }
+            .m1{
+                display: flex;
+                flex-direction: row;
+            }
+            .images{
+                padding-top: 100px;
+                padding-bottom: 30px;
+              display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+            }
+            .images1{
+                display: flex;
+                flex-direction: row;
+                padding-bottom: 50px;
+                justify-content: space-around;
+            }
+            .images2{
+                display: flex;
+                flex-direction: row;
+                padding-bottom: 50px;
+                justify-content: space-around;
+            }
+            .images3{
+                display: flex;
+                flex-direction: row;
+                padding-bottom: 50px;
+                justify-content: space-around;
+            }
+            .images4{
+                display: flex;
+                flex-direction: row;
+                padding-bottom: 50px;
+                justify-content: space-around;
+            }
+            .images5{
+                display: flex;
+                flex-direction: row;
+                padding-bottom: 50px;
+                justify-content: space-around;
+            }
+            .footer{
+                grid-area: footer;
+            }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="nav">
+            <div class="logo">
+            <img style="padding-top: 20px;padding-left: 10px;" src="./images/Screenshot 2025-06-18 205657.png" width="30px" height="30px">
+            <span><h1 style="font-size: 30px;padding-left: 5px;color: crimson;">EXA</h1></span>
+            </div>
+            <nav id="nav1">
+               <p><button style="padding-right: 300px;border: none;border-radius: 5px;padding-top: 6px;padding-bottom: 6px;"><i class="fas fa-search"></i>Search</button></p>
+               <p style="padding-top: 2px;"><a href="./project.html" style="text-decoration: none;color:white">Home</a></p>
+               <p style="margin-right: 5px;"><img src="./images/Screenshot 2025-06-17 212301.png" width="20px" height="20px"></p>
+            </nav>
+            </div>
+            <div class="main">
+                <h2 style="text-align: center;color: crimson;font-size: 28px;padding-bottom: 20px;">Horror</h3>
+                <div class="m1">
+                <button style="background-color: rgba(59, 58, 58, 0.372);border-radius: 4px;color:white;border: none;padding: 8px;margin-left: 30px;height: 32px;">Search..<span style="padding-left: 150px;"><i class="fas fa-search" style="color: white;"></i></span></button>
+                <button id="btn" style="background-color: rgba(59, 58, 58, 0.372);color:white;border: none;padding: 8px;border-radius: 4px;padding-right: 150px;margin-left: 30px;cursor: pointer;position: relative;height: 32px;">Type</button>
+                 <nav id="nav2" style="display: none; z-index: 2; background-color: rgba(42, 42, 42, 0.299); height: 250px;">
+                        <p>Movies</p>
+                        <p>Tv series</p>
+                        <p>Anime</p>
+                        <p>K-Drama</p>
+                        <p>C-Drama</p>
+                    </nav>
+                <button style="background-color: rgba(59, 58, 58, 0.372);color:white;border: none;border-radius: 4px;padding: 8px;padding-right: 150px;margin-left: 30px;height: 32px;">Ongoing</button>
+                <button style="background-color: rgba(59, 58, 58, 0.372);color:white;border-radius: 4px;border: none;padding: 8px;padding-right: 150px;margin-left: 30px;height: 32px;">Released date</button>
+                <button style="background-color: rgba(59, 58, 58, 0.372);color:white;border-radius: 4px;border: none;padding: 8px;margin-left: 30px;height: 32px;">Filter<i style="padding-left: 150px;" class="fas fa-filter"></i></button>
+                </div>
+                <div class="images">
+                <div class="i1">
+                <img src="https://static0.srcdn.com/wordpress/wp-content/uploads/2024/09/cailee-spaeney-as-rain-learning-how-to-shoot-a-gun-in-alien-romulus.jpg?q=70&fit=crop&w=735&h=413&dpr=1" width="260px" height="200px"  style="margin: 2px;"> 
+                <p style="margin: 2px;margin-left: 10px;font-size: 15px;">Alien: Romulus          <span style="margin-left: 40px;">8.1 / 10<img src="./images/download (5).png"></span></p>    
+                </div>
+                <div class="i2">
+                <img src="https://media.timeout.com/images/103967993/1024/576/image.webp" width="260px" height="200px">
+                 <p style="margin: 2px;margin-left: 10px;font-size: 15px;">It         <span style="margin-left: 100px;">8.5 / 10<img src="./images/download (5).png"></span></p>    
+                </div>
+                <div class="i3">    
+                <img src="https://media.timeout.com/images/105611650/1024/576/image.webp" width="260px" height="200px">
+                 <p style="margin: 2px;margin-left: 15px;font-size: 15px;"> The Invisible Man          <span style="margin-left: 40px;">7.1 / 10<img src="./images/download (5).png"></span></p>    
+                </div>
+                <div class="i4">
+                 <img src="https://resizing.flixster.com/qmcO1zjNbzkREECLVOC9dO8CTzE=/fit-in/180x240/v2/https://resizing.flixster.com/9WxKriao1BmRamIaqig2k8hd5uM=/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzL2YyZDQwYTM2LWZmYzEtNGUwMC05NzRkLTA3ODM0NThiNDE4Ny5qcGc=" width="260px" height="200px">
+                 <p style="margin: 2px;margin-left: 35px;font-size: 15px;">Talk to Me           <span style="margin-left: 40px;">7.0 / 10<img src="./images/download (5).png"></span></p>
+                </div>
+                </div>
+                <div class="images1">
+                <div class="i1">
+                <img src="https://i.mydramalist.com/xy8oq_4c.jpg?v=1" width="260px" height="200px">
+                 <p style="margin: 2px;margin-left: 15px;font-size: 15px;">Sweet Home          <span style="margin-left: 40px;">8.7 / 10<img src="./images/download (5).png"></span></p>
+                </div>
+                <div class="i2">
+                <img src="https://i.mydramalist.com/BWXjV_4c.jpg?v=1" width="260px" height="200px"  style="margin: 2px;"> 
+                <p style="margin: 2px;margin-left: 5px;font-size: 15px;">Happiness           <span style="margin-left: 40px;">8.8 / 10<img src="./images/download (5).png"></span></p>    
+                </div>
+                <div class="i3">    
+               <img src="https://i.mydramalist.com/WRQmX_4c.jpg?v=1" width="260px" height="200px">
+                 <p style="margin: 2px;margin-left: 5px;font-size: 15px;">All of Us Are Dead          <span style="margin-left: 150px;">8.5 / 10<img src="./images/download (5).png"></span></p>    
+                </div>
+                <div class="i4">
+                <img src="https://i.mydramalist.com/xklBrc.jpg?v=1 " width="260px" height="200px">
+                 <p style="margin: 2px;margin-left: 15px;font-size: 15px;">Train to Busan          <span style="margin-left: 40px;">8.9 / 10<img src="./images/download (5).png"></span></p>    
+                </div>
+                </div>
+                 <div class="images2">
+                <div class="i1">
+                <img src="https://i.mydramalist.com/QJ7qQv_4c.jpg?v=1" width="260px" height="200px"  style="margin: 2px;"> 
+                <p style="margin: 2px;margin-left: 10px;font-size: 15px;">Pyramid Game          <span style="margin-left: 40px;">8.5 / 10<img src="./images/download (5).png"></span></p>    
+                </div>
+                <div class="i2">
+                <img src="https://i.mydramalist.com/RBWq7P_4c.jpg?v=1" width="260px" height="200px">
+                 <p style="margin: 2px;margin-left: 10px;font-size: 15px;">Night Has Come          <span style="margin-left: 40px;">8.1 / 10<img src="./images/download (5).png"></span></p>    
+                </div>
+                <div class="i3">    
+                <img src="https://thecinemaholic.com/wp-content/uploads/2018/04/arundhati.jpg?resize=740,493" width="260px" height="200px">
+                 <p style="margin: 2px;margin-left: 15px;font-size: 15px;"> Arundhati          <span style="margin-left: 40px;">7.4 / 10<img src="./images/download (5).png"></span></p>    
+                </div>
+                <div class="i4">
+                 <img src="./images/Screenshot 2025-06-19 123815.png" width="260px" height="200px">
+                 <p style="margin: 2px;margin-left: 35px;font-size: 15px;">Imawa no Kuni no Alice           <span style="margin-left: 40px;">8.8 / 10<img src="./images/download (5).png"></span></p>
+                </div>
+                </div>
+                 <div class="images3">
+                <div class="i1">
+                <img src="https://cdn.myanimelist.net/images/anime/1498/134443.webp" width="260px" height="200px"  style="margin: 2px;"> 
+                <p style="margin: 2px;margin-left: 10px;font-size: 15px;">Tokyo Ghoul          <span style="margin-left: 40px;">7.9 / 10<img src="./images/download (5).png"></span></p>    
+                </div>
+                <div class="i2">
+                <img src="https://cdn.myanimelist.net/images/anime/1571/135153.webp" width="260px" height="200px">
+                 <p style="margin: 2px;margin-left: 10px;font-size: 15px;">Vampire Hunter D (2000)          <span style="margin-left: 40px;">7.9 / 10<img src="./images/download (5).png"></span></p>    
+                </div>
+                <div class="i3">    
+                <img src="https://tse1.mm.bing.net/th?id=OIP.uY0jEtYQO8VffXyD1bIYTgHaEK&pid=Api&P=0&h=180" width="260px" height="200px">
+                 <p style="margin: 2px;margin-left: 15px;font-size: 15px;">Bhool Bhulaiyaa 3        <span style="margin-left: 150px;">4.7 / 10<img src="./images/download (5).png"></span></p>    
+                </div>
+                <div class="i4">
+                <img src="https://tse2.mm.bing.net/th?id=OIP.vOteEhuPpd4V3sUDKa18agHaEK&pid=Api&P=0&h=180" width="260px" height="200px">
+                 <p style="margin: 2px;margin-left: 15px;font-size: 15px;">Stree 2          <span style="margin-left: 40px;">7.0 / 10<img src="./images/download (5).png"></span></p>    
+                </div>
+                </div>
+                 <div class="images4">
+                <div class="i1">
+                <img src="https://tse4.mm.bing.net/th?id=OIP.xT91x7RW5Hzp7hwssZPxoAHaEH&pid=Api&P=0&h=180" width="260px" height="200px"  style="margin: 2px;"> 
+                <p style="margin: 2px;margin-left: 5px;font-size: 15px;">Munjya          <span style="margin-left: 40px;">6.4 / 10<img src="./images/download (5).png"></span></p>    
+                </div>
+                <div class="i2">
+                <img src="https://tse4.mm.bing.net/th?id=OIP.5nEBMg9tqLcujAwltRKVygAAAA&pid=Api&P=0&h=180" width="260px" height="200px">
+                 <p style="margin: 2px;margin-left: 5px;font-size: 15px;">Kapkapiii          <span style="margin-left: 150px;">8.1 / 10<img src="./images/download (5).png"></span></p>    
+                </div>
+                <div class="i3">    
+                <img src="https://tse3.mm.bing.net/th?id=OIP.6ORtYb5zG9OI0yQTo7CUnAHaJQ&pid=Api&P=0&h=180" width="260px" height="200px">
+                 <p style="margin: 2px;margin-left: 15px;font-size: 15px;">The Bhootnii          <span style="margin-left: 40px;">6.7 / 10<img src="./images/download (5).png"></span></p>    
+                </div>
+                <div class="i4">
+                <img src="https://tse2.mm.bing.net/th?id=OIP.7oTtWZ0uTeuUUexj_iI9SAHaJ3&pid=Api&P=0&h=180" width="260px" height="200px">
+                 <p style="margin: 2px;margin-left: 35px;font-size: 15px;">Shaitaan<span style="margin-left: 40px;">6.6 / 10<img src="./images/download (5).png"></span></p>    
+                </div>
+                </div>
+                 <div class="images5">
+                <div class="i1">
+                <img src="https://www.91-cdn.com/metareel-images/content/posters-7-1704403928650-so4zbf0riOFmKp3aIT7YZeglB3f.jpg?tr=h-350,w-230,q-60&version=5" width="260px" height="200px"  style="margin: 2px;"> 
+                <p style="margin: 2px;margin-left: 5px;font-size: 15px;">The Exorcist: Believer           <span style="margin-left: 70px;">6.5 / 10<img src="./images/download (5).png"></span></p>    
+                </div>
+                <div class="i2">
+                <img src="https://tse1.mm.bing.net/th?id=OIP._9fwUxotdTF0CBKsCBHGOQAAAA&pid=Api&P=0&h=180" width="260px" height="200px">
+                 <p style="margin: 2px;margin-left: 35px;font-size: 15px;">Baak         <span style="margin-left: 40px;">6.0 / 10<img src="./images/download (5).png"></span></p>    
+                </div>
+                <div class="i3">    
+                <img src="https://tse4.mm.bing.net/th?id=OIP.Hpe6vqiWolpNDEGJIx3njQHaDt&pid=Api&P=0&h=180" width="260px" height="200px">
+                 <p style="margin: 2px;margin-left: 15px;font-size: 15px;">Masooda          <span style="margin-left: 40px;">8.0 / 10<img src="./images/download (5).png"></span></p>    
+                </div>
+                <div class="i4">
+                <img src="https://tse1.mm.bing.net/th?id=OIP.Q0RoJAHMfy2N8qgVNrrtlgAAAA&pid=Api&P=0&h=180" width="260px" height="200px">
+                 <p style="margin: 2px;margin-left: 15px;font-size: 15px;">Khosty         <span style="margin-left: 40px;">4.5 / 10<img src="./images/download (5).png"></span></p>    
+                </div>
+                </div>
+            </div>
+            <div class="footer">
+                <hr>
+            <p style="cursor: pointer;float: right;padding-bottom: 20px;">REQUEST  <span style="padding-left: 20px;">CONTACT</span></p>
+            <h3 style="padding-left: 30px;padding-top: 20px;">Copyright ©EXA.All Rights Reserved</h4>
+            <p style="font-size: 16px;padding-left: 30px;">This site does not store any files on its server. All contents are provided by non-affiliated third parties.</p>
+            <h1 style="float: right;padding-right: 10px;padding-bottom: 10px;color: crimson;"><img src="./images/Screenshot 2025-06-18 205657.png" width="20px" height="20px">EXA</h1>
+            </div>
+    </div>
+</body>
+<script>
+    $(document).ready(function(){
+           $("#btn").click(function(){
+            $("#nav2").slideToggle(1000);
+        });
+    });
+</script>
+</html>

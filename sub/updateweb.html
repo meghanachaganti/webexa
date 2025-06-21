@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>updates</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <style>
+            body{
+                background-color: black;
+                color:white
+                }
+            .container{
+                display:grid;
+                grid-template-columns: auto;
+                grid-template-rows: 50px 2200px 80px;
+                grid-template-areas:"nav nav nav"
+                "main main main"
+                "footer footer footer" ;
+                width: 100%;
+                height: 100vh;
+            }
+            .nav{
+                grid-area: nav;
+                display:flex;
+                flex-direction: row;
+                justify-content: space-between;
+            }
+            .logo{
+                flex-direction: row;
+                display: flex;
+            }
+            #nav1{
+                display:flex;
+                margin-left: 500px;
+            }
+            #nav1 p{
+                padding-left: 60px;
+                padding-right: 3px;
+            }
+            .main{
+                grid-area: main;            
+                margin-top: 50px;
+                
+            }
+            .m1{
+                display: flex;
+                flex-direction: row;
+            }
+            .submain{
+                
+                grid-area: r;
+                margin-top: 100px;
+                display: flex;
+            }
+            .footer{
+                grid-area: footer;
+            }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="nav">
+            <div class="logo">
+            <img style="padding-top: 20px;padding-left: 10px;" src="./images/Screenshot 2025-06-18 205657.png" width="30px" height="30px">
+            <span><h1 style="font-size: 30px;padding-left: 5px;color: crimson;">EXA</h1></span>
+            </div>
+            <nav id="nav1">
+               <p><button style="padding-right: 300px;border: none;border-radius: 5px;padding-top: 6px;padding-bottom: 6px;"><i class="fas fa-search"></i>Search</button></p>
+               <p style="padding-top: 2px;"><a href="./project.html" style="text-decoration: none;color:white">Home</a></p>
+               <p style="margin-right: 5px;"><img src="./images/Screenshot 2025-06-17 212301.png" width="20px" height="20px"></p>
+            </nav>
+            </div>
+            <div class="main">
+                <h2 style="text-align: center;color: crimson;font-size: 28px;padding-bottom: 20px;">Updates</h3>
+                <div class="m1">
+                <button style="background-color: rgba(59, 58, 58, 0.372);border-radius: 4px;color:white;border: none;padding: 8px;margin-left: 100px;height: 32px;">Search..<span style="padding-left: 150px;"><i class="fas fa-search" style="color: white;"></i></span></button>
+                <button id="btn" style="background-color: rgba(59, 58, 58, 0.372);color:white;border: none;padding: 8px;border-radius: 4px;padding-right: 150px;margin-left: 30px;cursor: pointer;position: relative;height: 32px;">Type</button>
+                 <nav id="nav2" style="display: none; z-index: 2; background-color: rgba(42, 42, 42, 0.299); height: 250px;">
+                        <p>Movies</p>
+                        <p>Tv series</p>
+                        <p>Anime</p>
+                        <p>K-Drama</p>
+                        <p>C-Drama</p>
+                    </nav>
+                <button style="background-color: rgba(59, 58, 58, 0.372);color:white;border: none;border-radius: 4px;padding: 8px;padding-right: 150px;margin-left: 30px;height: 32px;">Ongoing</button>
+                <button style="background-color: rgba(59, 58, 58, 0.372);color:white;border-radius: 4px;border: none;padding: 8px;padding-right: 150px;margin-left: 30px;height: 32px;">Released date</button>
+                <button style="background-color: rgba(59, 58, 58, 0.372);color:white;border-radius: 4px;border: none;padding: 8px;margin-left: 30px;height: 32px;">Filter<i style="padding-left: 150px;" class="fas fa-filter"></i></button>
+                </div>
+                <div class="submain">
+                <div class="r1" style="margin-right: 100px;margin-left: 20px;background-color: rgba(42, 42, 42, 0.299);">
+                <h3 style="padding-left: 100px;padding-right: 100px;font-size: 20px;">ONGOING</h2>
+                <img src="./images/Screenshot 2025-06-18 161430.png" width="80px" height="80px" style="border-radius:  80px;float: left;padding-left: 10px;padding-right: 10px;padding-top: 5px;">
+                <p style="font-size: 15px;padding-top: 30px;text-align: center;margin: 5px;padding-bottom: 60px;"> Our Unwritten Seoul</p>
+                <img src="./images/Screenshot 2025-06-18 165646.png" width="80px" height="80px" style="border-radius:  80px;float: left;padding-left: 10px;">
+                <p style="font-size: 15px;padding-top: 30px;text-align: center;padding-bottom: 10px;"> Kusuriya no Hitorigoto 2nd Season</p>
+                <img src="./images/Screenshot 2025-06-18 172542.png" width="80px" height="80px" style="border-radius:  80px;float: left;padding-left: 10px;">
+                <p style="font-size: 15px;padding-top: 30px;text-align: center;padding-bottom: 50px;"> Good Boy</p>
+                <img src="./images/Screenshot 2025-06-18 172456.png" width="80px" height="80px" style="border-radius:  80px;float: left;padding-left: 10px;">
+                <p style="font-size: 15px;padding-top: 30px;text-align: center;padding-bottom: 50px;"> Be Passionately in Love</p>
+                <img src="./images/Screenshot 2025-06-18 172029.png" width="80px" height="80px" style="border-radius:  80px;float: left;padding-left: 10px;">
+                <p style="font-size: 15px;padding-top: 30px;text-align: center;padding-bottom: 50px;">One Piece</p>
+                <img src="https://img.animeschedule.net/production/assets/public/img/anime/jpg/default/lazarus-3ace7fe305.jpg?w=260&q=90&b=0.7&s=0.6&up=false&strip=true&webp=auto" width="80px" height="80px" style="border-radius:  80px;float: left;padding-left: 10px;">
+                <p style="font-size: 15px;padding-top: 30px;text-align: center;padding-bottom: 50px;"> Lazarus</p>
+                <img src="https://i.mydramalist.com/b31mQe_4c.jpg?v=1" width="80px" height="80px" style="border-radius:  80px;float: left;padding-left: 10px;">
+                <p style="font-size: 15px;padding-top: 30px;text-align: center;padding-bottom: 50px;"> Queen's House</p>
+                <img src="https://tse1.mm.bing.net/th?id=OIP.gr0DxFF81Wmuls6e2SZ0wQHaE8&pid=Api&P=0&h=180" width="80px" height="80px" style="border-radius:  80px;float: left;padding-left: 10px;">
+                <p style="font-size: 15px;padding-top: 30px;text-align: center;padding-bottom: 50px;">  Spring of Youth</p>
+                <img src="https://tse3.mm.bing.net/th?id=OIP.43Ob-v9MgCo41BvrP_Du2gAAAA&pid=Api&P=0&h=180" width="80px" height="80px" style="border-radius:  80px;float: left;padding-left: 10px;">
+                <p style="font-size: 15px;padding-top: 30px;text-align: center;padding-bottom: 50px;">  Sweetheart Service</p>
+                <img src="https://tse4.mm.bing.net/th?id=OIP.9GFXe0XYIfQrLPcqQdcSuwAAAA&pid=Api&P=0&h=180" width="80px" height="80px" style="border-radius:  80px;float: left;padding-left: 10px;">
+                <p style="font-size: 15px;padding-top: 30px;text-align: center;padding-bottom: 50px;"> Ore wa Seikan Kokka no Akutoku Ryoushu!</p>
+                <img src="https://tse2.mm.bing.net/th?id=OIP.PECY-MbszuMjjOvxBUilDgHaKe&pid=Api&P=0&h=180" width="80px" height="80px" style="border-radius:  80px;float: left;padding-left: 10px;">
+                <p style="font-size: 15px;padding-top: 30px;text-align: center;padding-bottom: 50px;"> Kijin Gentoushou</p>
+                <img src="https://tse1.mm.bing.net/th?id=OIF.Tc0njvmbDlERgqBUkTUYTg&pid=Api&P=0&h=180" width="80px" height="80px" style="border-radius:  80px;float: left;padding-left: 10px;">
+                <p style="font-size: 15px;padding-top: 30px;text-align: center;padding-bottom: 50px;">  Ball Boy Tactics</p>
+                <img src="https://tse4.mm.bing.net/th?id=OIF.ru6hckPl9MP2c7Sgmd5B%2bQ&pid=Api&P=0&h=180" width="80px" height="80px" style="border-radius:  80px;float: left;padding-left: 10px;">
+                <p style="font-size: 15px;padding-top: 30px;text-align: center;padding-bottom: 50px;">  The First Night with the Duke</p>
+                <img src="https://tse4.mm.bing.net/th?id=OIP.2zyXqiJrznr_y85kRTSHxwHaKl&pid=Api&P=0&h=180" width="80px" height="80px" style="border-radius:  80px;float: left;padding-left: 10px;">
+                <p style="font-size: 15px;padding-top: 30px;text-align: center;padding-bottom: 50px;">  Oh My Ghost Clients</p>
+                 <img src="https://tse2.mm.bing.net/th?id=OIF.gUD1F7gS2MuXGRQPCeS0%2fw&pid=Api&P=0&h=180" width="80px" height="80px" style="border-radius:  80px;float: left;padding-left: 10px;">
+                <p style="font-size: 15px;padding-top: 30px;text-align: center;padding-bottom: 50px;"> Salon De Holmes</p>
+            </div>
+             <div class="r2" style="margin-right: 100px;margin-left: 20px;background-color: rgba(42, 42, 42, 0.299);">
+                <h3 style="padding-left: 100px;padding-right: 100px;font-size: 20px;">COMPLETED</h3>
+                 <img src="./images/Screenshot 2025-06-18 174054.png" width="80px" height="80px" style="border-radius:  80px;float: left;padding-left: 10px;padding-top: 5px;">
+                <p style="font-size: 15px;padding-top: 30px;text-align: center;padding-bottom: 50px;"> Solo Levelling 2nd Season</p>
+                <img src="./images/Screenshot 2025-06-18 173550.png" width="80px" height="80px" style="border-radius:  80px;float: left;padding-left: 10px;">
+                <p style="font-size: 15px;padding-top: 30px;text-align: center;padding-bottom: 50px;"> Nine Puzzles</p>
+                <img src="./images/Screenshot 2025-06-18 174547.png" width="80px" height="80px" style="border-radius:  80px;float: left;padding-left: 10px;">
+                <p style="font-size: 15px;padding-top: 30px;text-align: center;padding-bottom: 50px;"> Dear Hongrang</p>
+                <img src="./images/Screenshot 2025-06-18 174927.png" width="80px" height="80px" style="border-radius:  80px;float: left;padding-left: 10px;">
+                <p style="font-size: 15px;padding-top: 30px;text-align: center;padding-bottom: 50px;"> A Moment But Forever </p>
+                <img src="./images/Screenshot 2025-06-18 175159.png" width="80px" height="80px" style="border-radius:  80px;float: left;padding-left: 10px;">
+                <p style="font-size: 15px;padding-top: 30px;text-align: center;padding-bottom: 50px;"> Padakkalam</p>
+                <img src="https://tse3.mm.bing.net/th?id=OIP.nztJ2-qGuiNI2LbqE4RX4QHaKo&pid=Api&P=0&h=180" width="80px" height="80px" style="border-radius:  80px;float: left;padding-left: 10px;">
+                <p style="font-size: 15px;padding-top: 30px;text-align: center;padding-bottom: 50px;"> Solo Leveling 2nd Season</p>
+                <img src="https://tse2.mm.bing.net/th?id=OIP.2A4CbzcA9UFJeYdUfFO8KAHaDt&pid=Api&P=0&h=180" width="80px" height="80px" style="border-radius:  80px;float: left;padding-left: 10px;">
+                <p style="font-size: 15px;padding-top: 30px;text-align: center;padding-bottom: 50px;"> SAKAMOTO DAYS</p>
+                <img src="https://tse4.mm.bing.net/th?id=OIP.RMuHyJcDyWZpXG478qxerQHaKd&pid=Api&P=0&h=180" width="80px" height="80px" style="border-radius:  80px;float: left;padding-left: 10px;">
+                <p style="font-size: 15px;padding-top: 30px;text-align: center;padding-bottom: 50px;"> Dr. Stone: Science Future</p>
+                <img src="https://i.mydramalist.com/JBXyEw_4c.jpg?v=1" width="80px" height="80px" style="border-radius:  80px;float: left;padding-left: 10px;">
+                <p style="font-size: 15px;padding-top: 30px;text-align: center;padding-bottom: 50px;"> A Life for a Life</p>
+                <img src="https://i.mydramalist.com/818AEN_4c.jpg?v=1" width="80px" height="80px" style="border-radius:  80px;float: left;padding-left: 10px;">
+                <p style="font-size: 15px;padding-top: 30px;text-align: center;padding-bottom: 50px;"> Filter</p>
+                <img src="https://i.mydramalist.com/73dALN_4c.jpg?v=1" width="80px" height="80px" style="border-radius:  80px;float: left;padding-left: 10px;">
+                <p style="font-size: 15px;padding-top: 30px;text-align: center;padding-bottom: 50px;"> The Best Thing</p>
+                <img src="https://i.mydramalist.com/VXzRyz_4c.jpg?v=1" width="80px" height="80px" style="border-radius:  80px;float: left;padding-left: 10px;">
+                <p style="font-size: 15px;padding-top: 30px;text-align: center;padding-bottom: 50px;"> The First Frost</p>
+                <img src="https://tse4.mm.bing.net/th?id=OIP.uA7Ea5WVL1LRTHiVSBTWhAHaEK&pid=Api&P=0&h=180" width="80px" height="80px" style="border-radius:  80px;float: left;padding-left: 10px;">
+                <p style="font-size: 15px;padding-top: 30px;text-align: center;padding-bottom: 50px;">  When Life Gives You Tangerines</p>
+                <img src="https://i.mydramalist.com/ABRNyg_4c.jpg?v=1" width="80px" height="80px" style="border-radius:  80px;float: left;padding-left: 10px;">
+                <p style="font-size: 15px;padding-top: 30px;text-align: center;padding-bottom: 50px;">  Study Group</p>
+                <img src="https://i.mydramalist.com/ABo2bL_4c.jpg?v=1" width="80px" height="80px" style="border-radius:  80px;float: left;padding-left: 10px;">
+                <p style="font-size: 15px;padding-top: 30px;text-align: center;padding-bottom: 50px;">  Motel California</p>
+            </div>
+             <div class="r3" style="margin-left: 20px;background-color: rgba(42, 42, 42, 0.299);">
+                <h3 style="padding-left: 100px;padding-right: 100px;font-size: 20px;margin-left: 20px;">UPCOMING</h3>
+                <img src="./images/Screenshot 2025-06-18 173835.png" width="80px" height="80px" style="border-radius:  80px;float: left;padding-left: 10px;padding-top: 5px;">
+                <p style="font-size: 15px;padding-top: 30px;text-align: center;padding-bottom: 50px;"> Wind Breaker Season 2</p>
+                <img src="./images/Screenshot 2025-06-18 185905.png" width="80px" height="80px" style="border-radius:  80px;float: left;padding-left: 10px;">
+                <p style="font-size: 15px;padding-top: 30px;text-align: center;padding-bottom: 50px;"> RAJASAAB</p>
+                <img src="./images/Screenshot 2025-06-18 190210.png" width="80px" height="80px" style="border-radius:  80px;float: left;padding-left: 10px;">
+                <p style="font-size: 15px;padding-top: 30px;text-align: center;padding-bottom: 50px;"> Reborn(2025)</p>
+                <img src="./images/Screenshot 2025-06-18 190347.png" width="80px" height="80px" style="border-radius:  80px;float: left;padding-left: 10px;">
+                <p style="font-size: 15px;padding-top: 30px;text-align: center;padding-bottom: 50px;"> SPY x FAMILY Season 3</p>
+                <img src="./images/Screenshot 2025-06-20 160526.png" width="80px" height="80px" style="border-radius:  80px;float: left;padding-left: 10px;">
+                <p style="font-size: 15px;padding-top: 30px;text-align: center;padding-bottom: 50px;"> I Am a Running Mate</p>
+                <img src="https://img.animeschedule.net/production/assets/public/img/anime/jpg/default/one-punch-man-3-7243d9cfca.jpg?w=260&q=90&b=0.7&s=0.6&up=false&strip=true&webp=auto" width="80px" height="80px" style="border-radius:  80px;float: left;padding-left: 10px;">
+                <p style="font-size: 15px;padding-top: 30px;text-align: center;padding-bottom: 50px;"> One Punch Man 3</p>
+                <img src="https://tse1.mm.bing.net/th?id=OIP.pwIPmAbMSGvK-_vLzJ-K6gHaKa&pid=Api&P=0&h=180" width="80px" height="80px" style="border-radius:  80px;float: left;padding-left: 10px;">
+                <p style="font-size: 15px;padding-top: 30px;text-align: center;padding-bottom: 50px;"> Youjo Senki II</p>
+                <img src="https://tse3.mm.bing.net/th?id=OIP.BU4P4yBgzzsMmoXPLDSCXwAAAA&pid=Api&P=0&h=180" width="80px" height="80px" style="border-radius:  80px;float: left;padding-left: 10px;">
+                <p style="font-size: 15px;padding-top: 30px;text-align: center;padding-bottom: 50px;"> Jigokuraku 2nd Season </p>
+                <img src="https://cdn.myanimelist.net/images/anime/1220/136619.jpg" width="80px" height="80px" style="border-radius:  80px;float: left;padding-left: 10px;">
+                <p style="font-size: 15px;padding-top: 30px;text-align: center;padding-bottom: 50px;"> Fate/strange Fake</p>
+                <img src="https://tse4.mm.bing.net/th?id=OIP.EqX2wkmlgkVsedJYp6VJVAAAAA&pid=Api&P=0&h=180" width="80px" height="80px" style="border-radius:  80px;float: left;padding-left: 10px;">
+                <p style="font-size: 15px;padding-top: 30px;text-align: center;padding-bottom: 50px;"> Hi My World</p>
+                <img src="https://tse1.mm.bing.net/th?id=OIF.K7EESB4fj45hYPCbxK8xxQ&pid=Api&P=0&h=180" width="80px" height="80px" style="border-radius:  80px;float: left;padding-left: 10px;">
+                <p style="font-size: 15px;padding-top: 30px;text-align: center;padding-bottom: 50px;"> I Am a Running Mate</p>
+                <img src="https://tse3.mm.bing.net/th?id=OIF.EnHO8HPq8xR9UsP0wQ1ZpA&pid=Api&P=0&h=180" width="80px" height="80px" style="border-radius:  80px;float: left;padding-left: 10px;">
+                <p style="font-size: 15px;padding-top: 30px;text-align: center;padding-bottom: 50px;">  Head over Heels</p>
+                <img src="https://tse2.mm.bing.net/th?id=OIP.1vupoLsuSbjnKq0lA3NyugAAAA&pid=Api&P=0&h=180" width="80px" height="80px" style="border-radius:  80px;float: left;padding-left: 10px;">
+                <p style="font-size: 15px;padding-top: 30px;text-align: center;padding-bottom: 50px;"> Squid Game Season 3</p>
+                <img src="https://i.mydramalist.com/yWn3pR_4c.jpg?v=1" width="80px" height="80px" style="border-radius:  80px;float: left;padding-left: 10px;">
+                <p style="font-size: 15px;padding-top: 30px;text-align: center;padding-bottom: 50px;">  I Kill U</p>
+                <img src="https://i.mydramalist.com/3ogJJm_4c.jpg?v=1" width="80px" height="80px" style="border-radius:  80px;float: left;padding-left: 10px;">
+                <p style="font-size: 15px;padding-top: 30px;text-align: center;padding-bottom: 50px;"> Bitch x Rich Season 2</p>
+            </div>
+            </div>
+        </div>
+            <div class="footer">
+                <hr>
+            <p style="cursor: pointer;float: right;padding-bottom: 20px;">REQUEST  <span style="padding-left: 20px;">CONTACT</span></p>
+            <h3 style="padding-left: 30px;padding-top: 20px;">Copyright ©EXA.All Rights Reserved</h4>
+            <p style="font-size: 16px;padding-left: 30px;">This site does not store any files on its server. All contents are provided by non-affiliated third parties.</p>
+            <h1 style="float: right;padding-right: 10px;padding-bottom: 10px;color: crimson;"><img src="./images/Screenshot 2025-06-18 205657.png" width="20px" height="20px">EXA</h1>
+            </div>
+    </div>
+</body>
+<script>
+    $(document).ready(function(){
+           $("#btn").click(function(){
+            $("#nav2").slideToggle(1000);
+        });
+    });
+</script>
+</html>

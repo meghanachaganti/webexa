@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <style>
+        body{
+            background-color: black;
+            color:white;
+            margin-left: 400px;
+            margin-right: 400px;
+            margin-top: 100px;
+        }
+        .form:hover{
+             box-shadow: 0  10px 10px 10px crimson;
+        }
+        .form{
+     grid-area: form; 
+    margin-top: 1%;
+    background-color: #000000;
+    padding-top: 10px;
+}
+
+#form1{
+   text-align: center;
+    padding-bottom: 30px;
+}
+#ui{
+    padding: 5px;
+}
+#pw{
+    padding: 5px;
+}
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;padding-top: 20px;padding-bottom: 5px;color: crimson;"><img src="./images/Screenshot 2025-06-18 205657.png" width="20px" height="20px">EXA</h1>
+    <div class="form" id="c">
+            <form action="" id="form1" method="post">
+                <h2>LOG-IN</h2><br>
+                <br><label for="username">Username:</label>
+                <input type="text" name="username" id="ui"><br>
+                <br><label for="password">Password:</label>
+                <input type="password" name="password" id="pw"><br>
+                <p style="padding-left: 200px;color: blue;font-size: 13px;"><a href="./signup.html" style="text-decoration: none;color: blue;">Forgot Password?</a></p>
+                <br><input type="checkbox" name="check" id="ck">
+                <label for="check">I accept policies</label><br>
+                <br><button style="background-color: crimson;border: none;"><a href="./subproject.html" style="text-decoration: none;color: white;">SUBMIT</a></button>
+                <p>Don't have an account? <a href="./signup.html" style="text-decoration: none;color: blue;">Sign-Up</a></p>
+            </form>
+        </div>
+</body>
+</html>
